@@ -1,0 +1,27 @@
+body {
+  background-color: aquamarine;
+  background-image:url("img/island.png");
+  background-repeat: repeat-x;
+  background-size: 600px 200px;
+  background-position: 100px -100px;  }
+.boat {
+  width: 300px;
+	position: absolute;
+	top: 50%;
+	left: 35%;
+}
+.boat img{
+  width: 100%;
+}
+.boat::before {
+  content: "";
+  background-image: url("img/steam.png");
+  width: 100px;
+  height: 100px;
+  display: block;
+  background-size: 100px;
+  position: absolute;
+  top: -75px;
+  left: 3%;
+  opacity: 0;
+}
