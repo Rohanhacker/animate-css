@@ -1,0 +1,20 @@
+@-webkit-keyframes boating {
+  50% {
+    -webkit-transform:  rotate(5deg) translate(10px,5px);
+  }
+}
+@-webkit-keyframes back {
+  0% {
+      background-position: 100% -100px;
+  }
+  100% {
+      background-position: -350% -100px;
+  }
+}
+body{
+  -webkit-animation: back 10s linear infinite ;
+  animation-fill-mode: forwards;
+}
+.boat {
+	-webkit-animation: boating 3s ease-in-out infinite;
+}
