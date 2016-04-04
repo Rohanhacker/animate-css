@@ -11,10 +11,18 @@
       background-position: -350% -100px;
   }
 }
+@keyframes cloud {
+  40%,60% { opacity: 1;
+    transform: translate(-30px,10px) rotate(-10deg);
+  }
+}
 body{
   -webkit-animation: back 10s linear infinite ;
   animation-fill-mode: forwards;
 }
 .boat {
 	-webkit-animation: boating 3s ease-in-out infinite;
+}
+.boat::before {
+  animation: cloud 4s linear infinite;
 }
